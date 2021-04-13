@@ -1,0 +1,19 @@
+:root {
+    --background: #4c88b3;;
+    --background2: #80bbe6;
+    --colorText: #ffffff;
+    --button: #00a55d;
+    --buttonHover: #54b5d3;
+}
+.customBG {
+    background-color: var(--background);
+}
+.customBG2 {
+    background-color: var(--background2);
+}
+.card {
+    width:300px;
+}
+.card-content {
+    font-size: 0.9em;
+}
