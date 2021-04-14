@@ -1,12 +1,11 @@
-const { describe } = require("yargs");
 const Employee = require("../lib/Employee");
 
 const name = "John Doe";
 const id = 1;
 const email = "email@email.com";
 
-describe('Employee', () => {
-    describe('Initialization', () => {
+describe("Employee", () => {
+    describe("Initialization", () => {
 
         it("object Employee should have the following properties: name, id, email, and role.", () => {
             const objEmp = new Employee(name,id,email);
@@ -17,7 +16,6 @@ describe('Employee', () => {
             expect(objEmp.role).toEqual("Employee");
         });
         
-
     });
 
     describe("getName", () => {

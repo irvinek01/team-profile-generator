@@ -6,9 +6,9 @@
   "directories": {
     "test": "tests"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts" : { 
+    "test" : "jest" 
+ },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/irvinek01/team-profile-generator.git"
