@@ -6,11 +6,11 @@ const email = "email@email.com";
 const github = "irvinek01";
 
 describe("Engineer", () => {
-    describe("Initialization", () => { 
+    describe("Initialization", () => {
 
         it("object Engineer should have the following properties: name, id, email, and github.", () => {
-            const objEng = new Engineer(name,id,email,github);
-            
+            const objEng = new Engineer(name, id, email, github);
+
             expect(objEng.role).toEqual("Engineer");
             expect(objEng.github).toEqual(github);
         });
@@ -18,11 +18,11 @@ describe("Engineer", () => {
     });
 
     describe("getGithub", () => {
-		it("object Engineer github should be returned.", () => {
-			const objEng = new Engineer(name,id,email,github);
-			const objEngGithub = objEng.getGithub();
-			expect(objEngGithub).toEqual(github);
-		});
-	});
+        it("object Engineer github should be returned.", () => {
+            const objEng = new Engineer(name, id, email, github);
+            const objEngGithub = objEng.getGithub();
+            expect(objEngGithub).toEqual(github);
+        });
+    });
 
 });
