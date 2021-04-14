@@ -13,7 +13,11 @@ describe("Manager", () => {
             expect(objMan.role).toEqual("Manager");
             expect(objMan.officeNum).toEqual(officeNum);
         });
-
+        it("should throw an error when id is not a number.", () => {
+            const cb = () => new Manager(name, id, email, '555');
+            const err = new Error("Expected parameter 'officeNum' to be a non-negative number");
+            expect(cb).toThrowError(err);
+        });
     });
 
     describe("getOfficeNum", () => {

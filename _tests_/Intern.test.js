@@ -14,6 +14,11 @@ describe("Intern", () => {
             expect(objInt.role).toEqual("Intern");
             expect(objInt.school).toEqual(school);
         });
+        it("should throw an error when no input in school is returned.", () => {
+            const cb = () => new Intern(name, id, email, '');
+            const err = new Error("Expected parameter 'school' to be a non-empty string");
+            expect(cb).toThrowError(err);
+        });
 
     });
 

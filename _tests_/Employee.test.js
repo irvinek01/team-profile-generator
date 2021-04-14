@@ -16,6 +16,22 @@ describe("Employee", () => {
 			expect(objEmp.role).toEqual("Employee");
 		});
 
+		it("should throw an error when no string is returned.", () => {
+			const cb = () => new Employee('', id, email);
+			const err = new Error("Expected parameter 'name' to be a non-empty string");
+			expect(cb).toThrowError(err);
+		});
+		it("should throw an error when id is not a number.", () => {
+			const cb = () => new Employee(name, '1', email);
+			const err = new Error("Expected parameter 'id' to be a non-negative number");
+			expect(cb).toThrowError(err);
+		});
+		it("should throw an error when email is not valid.", () => {
+			const cb = () => new Employee(name, id, 'emailemail.com');
+			const err = new Error("Expected parameter 'email' should be valid");
+			expect(cb).toThrowError(err);
+		});
+
 	});
 
 	describe("getName", () => {

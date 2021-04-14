@@ -142,7 +142,7 @@ function insideCard(data) {
 <p>School: ${data.getSchool()}</p>
 </content>
 </div>\n`;
-        return cardIntern;
+        return ;
     }
 
 }

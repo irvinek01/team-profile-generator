@@ -14,6 +14,11 @@ describe("Engineer", () => {
             expect(objEng.role).toEqual("Engineer");
             expect(objEng.github).toEqual(github);
         });
+        it("should throw an error when no input in github is returned.", () => {
+            const cb = () => new Engineer(name, id, email, '');
+            const err = new Error("Expected parameter 'github' to be a non-empty string");
+            expect(cb).toThrowError(err);
+        });
 
     });
 
