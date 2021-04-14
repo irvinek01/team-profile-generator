@@ -18,7 +18,7 @@ function addManager() {
                 message: "What is the team manager's name?",
             },
             {
-                type: "input",
+                type: "number",
                 name: "managerId",
                 message: "What is the team manager's ID?",
             },
@@ -28,7 +28,7 @@ function addManager() {
                 message: "What is the team manager's email?",
             },
             {
-                type: "input",
+                type: "number",
                 name: "officeNum",
                 message: "What is the team manager's office number?",
             },
@@ -49,7 +49,7 @@ function addEngineer() {
                 message: "What is your engineer's name?",
             },
             {
-                type: "input",
+                type: "number",
                 name: "engineerId",
                 message: "What is your engineer's ID?",
             },
@@ -80,7 +80,7 @@ function addIntern() {
                 message: "What is your intern's name?",
             },
             {
-                type: "input",
+                type: "number",
                 name: "internId",
                 message: "What is your intern's ID?",
             },
@@ -124,9 +124,9 @@ function insideCard(data) {
 <p>🕶${data.getRole()}</p>
 </header>
 <content class='card-content'>
-<p>ID: 1</p>
-<p>Email: <a href="mailto:${data.getEmail()}">${data.getEmail()}</a></p>
-<p>Github: <a href="https://github.com/${data.getGithub()}">${data.getGithub()}</a></p>
+<p><b>ID:</b> ${data.getId()}</p>
+<p><b>Email:</b> <a href="mailto:${data.getEmail()}">${data.getEmail()}</a></p>
+<p><b>Github:</b> <a href="https://github.com/${data.getGithub()}">${data.getGithub()}</a></p>
 </content>
 </div>\n`;
         return cardEngineer;
@@ -142,7 +142,7 @@ function insideCard(data) {
 <p>School: ${data.getSchool()}</p>
 </content>
 </div>\n`;
-        return ;
+        return cardIntern;
     }
 
 }
