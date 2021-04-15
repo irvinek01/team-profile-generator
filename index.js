@@ -137,7 +137,7 @@ function insideCard(data) {
 <p>🎓${data.getRole()}</p>
 </header>
 <content class='card-content'>
-<p>ID: 1</p>
+<p>ID: ${data.getId()}</p>
 <p>Email: <a href="mailto:${data.getEmail()}">${data.getEmail()}</a></p>
 <p>School: ${data.getSchool()}</p>
 </content>
