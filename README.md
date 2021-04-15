@@ -50,8 +50,7 @@ node index.js
 
 ## Demo
 
-- A link for an instructional demonstration of the command-line app. 
-NOT YET
+- https://drive.google.com/file/d/1hyckY5j5mSMmONopIX4jeJTuGmcDj4JJ/view
 
 ## Acknowledgements
 - Mr. John
